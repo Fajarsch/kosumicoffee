@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosumi Coffee</title>
+    <link rel="shortcut icon" href="image/icon-kosumi.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+</head>
+<body>
+    <div class="container-nav">
+        
+        <div class="head-logo">
+            <a href=""><img src="image/logo-kosumi.png" alt="kosumi-logo"></a>
+        </div>
+
+        <div class="navbar">
+            
+            <div class="icon-bar" onclick="show()">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="user">
+                <a onclick="downFunction()"><i class="fas fa-user-circle user-icon"></i></a>
+            </div>
+            <div id="dropdownNav" class="dropdown-content">
+                <li>
+                    <a href="#profile">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#payment">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Payment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#setting">
+                        <i class="fas fa-cog"></i>
+                        <span>Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#faq">
+                        <i class="fas fa-question-circle"></i>
+                        <span>FAQ</span>
+                    </a>
+                </li>
+            </div>
+            
+            <div class="shop-bag">
+                <a href="#cart"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+
+            <ul class="nav">
+                <li class="close"><span onclick="hide()"><i class="fas fa-times"></i></span></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="headline">
+        <div class="headline-page">
+            <a href="https://www.instagram.com/kosumi.id/" target="_blank"><img src="image/icon-cut-kosumi.png" alt="Kosumi"></a>
+            <h1>A COFFEE MADE WITH HAPPINESS</h1>
+        </div>
+    </div>
+
+    <div class="container-about" id="about">
+        <div class="about-img">
+            <img src="image/about-kosumi.png" alt="about">
+        </div>
+
+        <div class="about-text">
+            <p>The unique taste and aroma of KOSUMI delivers a whole range emotional benefits that go beyond taste from stimulation to relaxation to refreshment and beyond.<br>
+            <br><i>"Enjoy a bottle of KOSUMI coffee to refresh your body and mind before embarking task."</i> - <strong>KOSUMI</strong></p>
+        </div>
+    </div>
+
+    <div class="section-product" id="product">
+        <h1 class="title-product">Product</h1>
+        <div class="container-product">
+
+            <div class="product-card">
+
+                <button class="modal-button fas fa-info-circle" href="#infoSingleBottle"></button>
+
+                <div id="infoSingleBottle" class="modal-box">
+
+                    <div class="modal-content">
+                        <span class="close-modal">
+                            <i class="fas fa-times"></i>
+                        </span>
+                        <h2>Single Bottle</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="product-tumb">
+                    <img src="image/product1.png" alt="coffee">
+                </div>
+                <div class="product-details">
+                    <h4>Single Bottle</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price">Rp. 00,000</div>
+                        <div class="product-links">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+
+                <button class="modal-button fas fa-info-circle" href="#infoMultiBottle"></button>
+
+                <div id="infoMultiBottle" class="modal-box">
+
+                    <div class="modal-content">
+                        <span class="close-modal">
+                            <i class="fas fa-times"></i>
+                        </span>
+                        <h2>Multi Bottle</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="product-tumb">
+                    <img src="image/product2.png" alt="coffee">
+                </div>
+                <div class="product-details">
+                    <h4>Multi Bottle</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>Rp. 00,000</small>Rp. 00,000</div>
+                        <div class="product-links">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container-footer" id="contact">
+        <div class="footer-logo">
+            <a href=""><img src="image/logo-kosumi.png" alt="kosumi-logo"></a>
+        </div>
+
+        <div class="footer-middle">
+            <li class="list">
+                <h2 class="footer-list-title">Contact</h2>
+
+                <ul>
+                    <li><a href="#">Whatsapp</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </li>
+
+            <li class="list">
+                <h2 class="footer-list-title">Other</h2>
+
+                <ul>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Term of Use</a></li>
+                    <li><a href="#">How to Order</a></li>
+                </ul>
+            </li>
+        </div>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+</html>
